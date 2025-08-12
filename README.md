@@ -1,0 +1,2 @@
+# SANTOSMINIG
+compañía minera
