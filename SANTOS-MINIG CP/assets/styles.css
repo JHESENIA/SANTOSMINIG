@@ -1,0 +1,506 @@
+/* ====== Estilos globales ====== */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* ====== Navegación ====== */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; /* Negro industrial */
+    padding: 15px 20px;
+    gap: 35px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+nav a {
+    color: #f2a900; /* Dorado minero */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ====== Contenedor General ====== */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ====== Hero Section ====== */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/assets/img/mina.jpg') center/cover;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+/* ====== Features ====== */
+.features-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.features-section h2 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.feature-item {
+    flex: 1 1 280px;
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    border-top: 4px solid #f2a900;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item h3 {
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+/* ====== Footer ====== */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: #f2a900;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero-section {
+        font-size: 1rem;
+        padding: 40px 15px;
+    }
+
+    .feature-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ====== SECCIÓN SERVICIOS ====== */
+.seccion-servicios {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.seccion-servicios h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.seccion-servicios .intro {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ====== GRID DE SERVICIOS CON FLEXBOX ====== */
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap; /* Se adapta en móviles */
+    justify-content: center;
+    gap: 25px;
+}
+
+.servicio {
+    flex: 1 1 260px; /* Se adapta pero mínimo 260px */
+    background: white;
+    border-radius: 8px;
+    border-top: 4px solid #f2a900; /* Dorado minero */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.servicio h2 {
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.servicio p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .seccion-servicios {
+        padding: 20px;
+    }
+    .servicios-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ====== CONTENEDOR NOSOTROS ====== */
+.container-nosotros {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ====== TÍTULO PRINCIPAL ====== */
+.titulo-principal {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+/* ====== BLOQUES DE INFORMACIÓN ====== */
+.bloque-info {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    border-left: 5px solid #f2a900; /* Dorado minero */
+    display: flex;
+    flex-direction: column; /* Texto y títulos en columna */
+    gap: 10px;
+}
+
+.bloque-info h2 {
+    font-size: 1.5rem;
+    color: #1a1a1a;
+}
+
+.bloque-info p,
+.bloque-info ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.bloque-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bloque-info li {
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.bloque-info li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #f2a900;
+    font-weight: bold;
+}
+/* ====== FOOTER ====== */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column; /* Elementos uno debajo del otro */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente si hay más altura */
+    gap: 12px;
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    color: #f2a900;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer .social-icons a:hover {
+    color: white;
+}
+
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .container-nosotros {
+        padding: 20px;
+    }
+    .bloque-info {
+        padding: 20px;
+    }
+}
+/* ====== NAV MENU ====== */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #1a1a1a;
+  padding: 15px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-menu a:hover {
+  color: #f2a900;
+}
+
+/* ====== SECCIÓN CONTACTO ====== */
+.seccion-contacto {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.contacto-detalles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.contacto-detalles ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contacto-detalles a {
+  color: #f2a900;
+  text-decoration: none;
+}
+.contacto-detalles a:hover {
+  color: #1a1a1a;
+}
+
+/* Botón WhatsApp */
+.btn-wsp {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn-wsp:hover {
+  background-color: #1ebe5a;
+}
+
+/* ====== FORMULARIO ====== */
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.formulario-contacto input,
+.formulario-contacto button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.formulario-contacto button {
+  background-color: #f2a900;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.formulario-contacto button:hover {
+  background-color: #d99000;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 25px 0;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer .social-icons a {
+  color: #f2a900;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer .social-icons a:hover {
+  color: white;
+}
+/* ==== SECCIÓN COMENTARIOS ==== */
+.seccion-comentarios {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.comentarios-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que se acomoden en pantallas pequeñas */
+}
+
+.comentario {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 300px; /* Flexible y con mínimo de 300px */
+    max-width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.texto {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.autor {
+    font-weight: bold;
+    color: #555;
+}
+
+/* ==== FOOTER ==== */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 25px 0;
+    margin-top: 40px;
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column; /* uno debajo del otro */
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    color: #f2a900;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: white;
+}
+
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .comentarios-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
