@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contáctanos | SANTOS MINIG</title>
   <link rel="stylesheet" href="../assets/styles.css">
-
 </head>
 <body>
 
   <!-- HEADER -->
-            <nav >
-            <a href="/index.html">Inicio</a>
-            <a href="/pages/nosotros.html">Nosotros</a>
-            <a href="/pages/comentarios.html">Comentarios</a>
-            <a href="/pages/servicios.html">Servicios</a>
-            <a href="/pages/contactos.html">Contactos</a>
-            </nav>
+  <nav class="nav-menu">
+    <a href="/index.html">Inicio</a>
+    <a href="/pages/nosotros.html">Nosotros</a>
+    <a href="/pages/comentarios.html">Comentarios</a>
+    <a href="/pages/servicios.html">Servicios</a>
+    <a href="/pages/contactos.html">Contactos</a>
+  </nav>
 
   <main class="seccion-contacto">
     <h1>Contáctanos</h1>
@@ -31,47 +30,42 @@
         <li><strong>Dirección:</strong> Av. Industrial 456, Lima, Perú</li>
         <li><strong>Horario:</strong> Lunes a Viernes, 8:00 a.m. – 5:00 p.m.</li>
       </ul>
-
       <a class="btn-wsp" href="https://wa.me/51973771526" target="_blank">Escríbenos por WhatsApp</a>
     </div>
 
-    <!-- pages/contacto.html (o donde quieras que aparezca el formulario) -->
-  <form id="contactForm">
-  <h2>Inscríbete Aquí</h2>
+    <!-- FORMULARIO -->
+    <form id="contactForm" class="formulario-contacto">
+      <h2>Inscríbete Aquí</h2>
 
-  <label for="nombre">Nombre completo</label>
-  <input type="text" id="nombre" name="nombre" required />
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" required />
 
-  <label for="email">Correo electrónico</label>
-  <input type="email" id="email" name="email" required />
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required />
 
-  <label for="telefono">Número de celular</label>
-  <input type="tel" id="telefono" name="telefono" required />
+      <label for="telefono">Número de celular</label>
+      <input type="tel" id="telefono" name="telefono" required />
 
-  <div class="checkbox-group">
-    <input type="checkbox" id="acepto" name="acepto" required />
-    <label for="acepto">Acepto los términos y políticas</label>
-  </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="acepto" name="acepto" required />
+        <label for="acepto">Acepto los términos y políticas</label>
+      </div>
 
-  <button type="submit">Enviar inscripción</button>
+      <button type="submit">Enviar inscripción</button>
+    </form>
+  </main>
 
-  
-</section>
-</main>
   <!-- FOOTER -->
-   <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 SANTOS MINIG. Todos los derechos reservados.</p>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/ParkMinJhessyR" target="_blank">Facebook</a> |
-                <a href="https://www.instagram.com/jheseniaromero/" target="_blank">Instagram</a> |
-                <a href="https://wa.me/51973771526" target="_blank">WhatsApp</a>
-            </div>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2025 SANTOS MINIG. Todos los derechos reservados.</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/ParkMinJhessyR" target="_blank">Facebook</a> |
+        <a href="https://www.instagram.com/jheseniaromero/" target="_blank">Instagram</a> |
+        <a href="https://wa.me/51973771526" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
 
-
-
-   
 </body>
 </html>
